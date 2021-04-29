@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import icon from "../../assets/images/lock-icon.svg"
+import icon from "../../assets/images/icon-lock.svg"
 
 export const ContactSection = () => {
   return (

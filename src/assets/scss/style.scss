@@ -137,8 +137,9 @@
     }
   }
   &-privacy,
-  &-terms {
-    padding: 200px 0 0 0;
+  &-terms,
+  &-faq {
+    padding: 150px 0 0 0;
     @include mq("desktop-wide") {
       padding: 300px 0 0 0;
     }
@@ -175,6 +176,62 @@
       background-color: white;
       color: $primary;
       border: 1px solid $primary;
+    }
+  }
+}
+
+.bg-light-primary {
+  background: rgba($primary, 0.3);
+}
+
+.accordion {
+  margin: auto;
+  width: 100%;
+  max-width: 888px;
+  text-align: left;
+  &-item {
+    display: flex;
+    &__icon {
+      display: flex;
+      width: 46px;
+      height: 46px;
+      align-items: center;
+      border-radius: 5px;
+      flex-shrink: 0;
+      justify-content: center;
+      margin-right: 30px;
+    }
+    &__title {
+      position: relative;
+      padding-right: 50px;
+      margin-bottom: 20px;
+      @include bodyText(big);
+      color: #5d6a7c;
+      line-height: 1.8;
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 34px;
+        height: 34px;
+        background: url("../images/icon-down.svg") no-repeat center;
+        transition: transform 0.3s ease-in-out;
+      }
+      &[aria-expanded="true"] {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+      &:hover {
+        color: $primary;
+      }
+    }
+    &__content {
+      @include bodyText();
+      color: #1f1f1f;
     }
   }
 }

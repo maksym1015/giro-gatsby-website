@@ -40,7 +40,7 @@ export default function Footer() {
               <a href="/">Contact</a>
             </li>
             <li>
-              <a href="/">FAQ</a>
+              <Link to="/faq">FAQ</Link>
             </li>
             <li>
               <Link to="/privacy">Privacy Policy</Link>
@@ -53,9 +53,6 @@ export default function Footer() {
         <div className="col-md-2">
           <p>Support</p>
           <ul>
-            <li>
-              <a href="/">Home Page</a>
-            </li>
             <li>
               <a href="/">Residents</a>
             </li>
