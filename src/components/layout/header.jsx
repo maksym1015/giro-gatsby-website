@@ -12,12 +12,12 @@ export default function Header() {
         <div className="nav-items">
           <ul>
             <li className="nav-item">
-              <Link to="#residents" className="nav-link activity">
+              <Link to="#residents" className="nav-link resident">
                 Residents
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="#owners" className="nav-link">
+              <Link to="#owners" className="nav-link owner">
                 Property Owners
               </Link>
             </li>

@@ -17,9 +17,9 @@
 
 .section {
   &-hero {
-    padding: 250px 0 150px;
+    padding: 200px 0 150px;
     @include mq("desktop-wide") {
-      padding: 397px 0 280px;
+      padding: 337px 0 280px;
     }
   }
   &-redefine {

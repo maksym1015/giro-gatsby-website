@@ -26,7 +26,17 @@
     }
   }
   .nav-link {
+    padding: 0;
     color: $body_col;
+    &.resident {
+      width: 123px;
+    }
+    &.owner {
+      width: 150px;
+    }
+    &:hover {
+      font-weight: bold;
+    }
     &.activity {
       color: $heading_col;
       font-weight: 600;
