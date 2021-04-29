@@ -1,6 +1,5 @@
 import React from "react"
-import Header from "../components/layout/header"
-import Footer from "../components/layout/footer"
+import Layout from "../components/layout"
 import {
   HeroSection,
   RedefineSection,
@@ -12,10 +11,9 @@ import {
 } from "../components/sections"
 
 import "../assets/scss/style.scss"
-export default function Home() {
+export default function App() {
   return (
-    <>
-      <Header />
+    <Layout>
       <main>
         <HeroSection />
         <RedefineSection />
@@ -25,7 +23,6 @@ export default function Home() {
         <FeatureSection />
         <ContactSection />
       </main>
-      <Footer />
-    </>
+    </Layout>
   )
 }

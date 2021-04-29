@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "gatsby"
+
 import logo from "../../assets/images/logo.svg"
 import linkedin from "../../assets/images/linkedin.png"
 import facebook from "../../assets/images/facebook.png"
@@ -41,10 +43,10 @@ export default function Footer() {
               <a href="/">FAQ</a>
             </li>
             <li>
-              <a href="/">Privacy Policy</a>
+              <Link to="/privacy">Privacy Policy</Link>
             </li>
             <li>
-              <a href="/">Terms & Conditions</a>
+              <Link to="/terms">Terms & Conditions</Link>
             </li>
           </ul>
         </div>
