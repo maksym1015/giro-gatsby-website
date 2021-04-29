@@ -41,8 +41,11 @@
     }
   }
   &-vision {
-    padding: 50px 0 135px;
-    background-color: #f6f7f7;
+    padding: 100px 0;
+    background-image: url(../images/2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
     .size-large {
       margin: 0 auto;
@@ -64,11 +67,14 @@
   }
   &-earning {
     padding: 118px 0;
-    background-color: #f6f7f7;
+    background-image: url(../images/2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
   }
   &-feature {
-    padding: 190px 0 90px;
+    padding: 150px 0 90px;
     .feature {
       display: flex;
       justify-content: space-between;
