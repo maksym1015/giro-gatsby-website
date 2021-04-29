@@ -1,0 +1,58 @@
+/**
+ * Basic typography style for copy text
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+a {
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: $body_col;
+}
+
+h1 {
+  @include heading1();
+}
+
+h2 {
+  @include heading2();
+}
+
+h3 {
+  @include heading3();
+}
+
+p {
+  @include bodyText("normal");
+  &.size-large {
+    @include bodyText("large");
+  }
+  &.size-big {
+    @include bodyText("big");
+  }
+  &.size-small {
+    @include bodyText("small");
+  }
+  &.size-xsmall {
+    @include bodyText("xsmall");
+  }
+}

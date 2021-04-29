@@ -1,0 +1,79 @@
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if ($type == min) {
+      $width: $width + 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin heading1() {
+  font-size: 44px;
+  line-height: 65px;
+  letter-spacing: -3.6px;
+  @include mq("desktop-wide") {
+    font-size: 54px;
+  }
+}
+@mixin heading2() {
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: -3.25px;
+  @include mq("desktop-wide") {
+    font-size: 52px;
+  }
+}
+@mixin heading3() {
+  font-size: 28px;
+  line-height: 47px;
+  letter-spacing: -1.88px;
+  @include mq("desktop-wide") {
+    font-size: 31px;
+  }
+}
+
+@mixin bodyText($size: normal) {
+  @if $size == large {
+    font-size: 24px;
+    letter-spacing: -0.53px;
+    line-height: 36px;
+    @include mq("desktop-wide") {
+      font-size: 28px;
+    }
+  }
+  @if $size == big {
+    font-size: 22px;
+    letter-spacing: -0.56px;
+    line-height: 40px;
+    @include mq("desktop-wide") {
+      font-size: 24px;
+    }
+  }
+  @if $size == normal {
+    font-size: 18px;
+    letter-spacing: -0.38px;
+    line-height: 29px;
+    @include mq("desktop-wide") {
+      font-size: 20px;
+    }
+  }
+  @if $size == small {
+    font-size: 16px;
+    letter-spacing: -0.42px;
+    line-height: 32px;
+    @include mq("desktop-wide") {
+      font-size: 18px;
+    }
+  }
+  @if $size == xsmall {
+    font-size: 14px;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+    @include mq("desktop-wide") {
+      font-size: 16px;
+    }
+  }
+}

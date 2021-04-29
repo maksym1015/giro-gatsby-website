@@ -1,0 +1,20 @@
+//Colors
+$primary: #50c6f1;
+$heading_col: #1f1f1f;
+$body_col: #5d6a7c;
+$light_gray: #eef4f5;
+
+//Media query breakpoints
+$breakpoints: (
+  "phone-xsmall": 320px,
+  "phone-small": 375px,
+  "phone": 425px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "tablet-wide": 992px,
+  "desktop-small": 1024px,
+  "desktop": 1200px,
+  "desktop-wide": 1440px,
+);

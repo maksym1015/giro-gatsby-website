@@ -1,0 +1,38 @@
+// Footer styles
+footer {
+  padding: 82px 0 100px !important;
+  .row {
+    padding-top: 123px;
+  }
+  .social-links {
+    padding-top: 15px;
+    a {
+      padding-right: 10px;
+    }
+  }
+  .btn-groups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .col-md-2 {
+    .btn {
+      font-size: 13px;
+      width: 128px;
+    }
+    .btn-second {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+    p {
+      padding-bottom: 50px;
+    }
+    ul {
+      a {
+        line-height: 50px;
+        color: #1f1f1f;
+      }
+    }
+  }
+}
