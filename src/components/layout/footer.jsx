@@ -7,7 +7,6 @@ import twitter from "../../assets/images/twitter.png"
 export default function Footer() {
   return (
     <footer className="container">
-      <hr />
       <div className="row">
         <div className="col-md-4">
           <a href="/">
