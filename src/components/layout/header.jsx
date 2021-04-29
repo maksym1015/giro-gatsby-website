@@ -22,7 +22,7 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-          <div>
+          <div className="btns">
             <Link to="/" className="btn btn-second mr-3">
               Login
             </Link>

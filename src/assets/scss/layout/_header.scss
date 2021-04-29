@@ -12,6 +12,11 @@
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    @include mq("tablet-wide", max) {
+      .btns {
+        display: none;
+      }
+    }
   }
   .nav-items {
     display: flex;
